@@ -10,7 +10,6 @@
 <p id="hours"></p>
 <p id ="minutes"></p>
 <p id ="seconds"></p>
-console.log(hours,minutes,seconds);
 <script> 
 var postedData = <?php echo json_encode($_POST); ?>;
 var myClock = new CountdownClock (postedData);
