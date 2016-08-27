@@ -1,7 +1,7 @@
 
 var CountdownClock = function (yearMonthDayHourMin) {
 	this.startTime = new function (){
-		console.log(yearMonthDayHourMin);
+		
 		var date = yearMonthDayHourMin.startDate.split("-").map(Number);
 		return new Date (date[0], date [1]-1, date[2], parseInt(yearMonthDayHourMin.hour,10),parseInt		(yearMonthDayHourMin.minute,10));
 	}
