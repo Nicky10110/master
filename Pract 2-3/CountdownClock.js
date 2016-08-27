@@ -12,7 +12,7 @@ var CountdownClock = function (yearMonthDayHourMin) {
 		document.getElementById (minutesId).innerHTML = count.minutes;
 		document.getElementById (secondsId).innerHTML = count.seconds;
 	}
-	m
+	
 	this.timeRemaining = function(){
 		var now = new Date();
 		var timeLeft = this.startTime.getTime ()- now.getTime(); 
