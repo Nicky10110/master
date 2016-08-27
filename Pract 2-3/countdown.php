@@ -14,8 +14,6 @@
 <script> 
 var postedData = <?php echo json_encode($_POST); ?>;
 var myClock = new CountdownClock (postedData);
-
-
 myClock.updateCountdown("hours","minutes","seconds"); 
 setInterval(function(){myClock.updateCountdown("hours","minutes","seconds")},1000); 
 
