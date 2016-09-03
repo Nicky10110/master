@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"/>
 </head>
 <body>
-	<div class="container">
+	<div class="container-fluid">
 		<div class="jumbotron text-center">
 			<h1>Shawpify</h1>
 			<p>Everything you need to <s>buy</s> know to create a web application!</p>
@@ -21,15 +21,12 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">Shawpify</a>
+				<a class="navbar-brand" href="index.php">Shawpify Home</a>
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">
-					<li><a class="active" href="#">Home</a></li>
-					<li><a href="#">Products</a></li>
-					<li><a href="#">Deals</a></li>
-					<li><a href="#">Stores</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="producst.php">Products</a></li>
+					<li><a href="contact.php">Contact Us</a></li>
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
@@ -141,12 +138,13 @@
 	</div>
 
 	<footer class="container-fluid text-center">
-		<p>Copyright &copy; <?php echo Date("Y"); ?> Shaw Academy</p>
+		
 		<form class="form-inline" action="subscribe.php" method="POST">
 			<label for="email">Subscribe for Special Offers:</label>
 			<input id="email" type="email" class="form-control" size="50" placeholder="Email Address">
 			<button type="submit" class="btn btn-success">Sign Up</button>
 		</form>
+		<p>Copyright &copy; <?php echo Date("Y"); ?> Shaw Academy</p>
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
