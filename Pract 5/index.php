@@ -21,132 +21,35 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index.php">Shawpify Home</a>
+				<a id ="home" class="navbar-brand" href="home.php">Shawpify Home</a>
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">
-					<li><a href="producst.php">Products</a></li>
+					<li><a href="product.php">Products</a></li>
 					<li><a href="contact.php">Contact Us</a></li>
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#"><span class="glyphicon glyphicon-user"></span>Your Account</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-user"></span>Sign in</a></li>
 					<li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a></li>
 				</ul>
 			</div>
 		</nav>
 	</div>
-
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4">
-				<div class="panel panel-primary">
-					<div class="panel-heading">Title</div>
-					<div class="panel-body">
-						<img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-					</div>
-					<div class="panel-footer">
-						<p>This is an example description just to see how this would work in the context of having a large description and the impact of it on the rest of the panel, I am going to start writing random things and compare, there will probably be a more button or something similar to that.</p>
-					</div>
-					<div class="panel-btn">
-						<button class='btn btn-primary'>Details</button>
-						<button class='btn btn-success pull-right'>Add to Cart</button>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="panel panel-primary">
-					<div class="panel-heading">Title</div>
-					<div class="panel-body">
-						<img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-					</div>
-					<div class="panel-footer">
-						<p>This is an example description just to see how this would work in the context of having a large description and the impact of it on the rest of the panel, I am going to start writing random things and compare, there will probably be a more button or something similar to that.</p>
-					</div>
-					<div class="panel-btn">
-						<button class='btn btn-primary'>Details</button>
-						<button class='btn btn-success pull-right'>Add to Cart</button>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="panel panel-primary">
-					<div class="panel-heading">Title</div>
-					<div class="panel-body">
-						<img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-					</div>
-					<div class="panel-footer">
-						<p>This is an example description just to see how this would work in the context of having a large description and the impact of it on the rest of the panel, I am going to start writing random things and compare, there will probably be a more button or something similar to that.</p>
-					</div>
-					<div class="panel-btn">
-						<button class='btn btn-primary'>Details</button>
-						<button class='btn btn-success pull-right'>Add to Cart</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4">
-				<div class="panel panel-primary">
-					<div class="panel-heading">Title</div>
-					<div class="panel-body">
-						<img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-					</div>
-					<div class="panel-footer">
-						<p>This is an example description just to see how this would work in the context of having a large description and the impact of it on the rest of the panel, I am going to start writing random things and compare, there will probably be a more button or something similar to that.</p>
-					</div>
-					<div class="panel-btn">
-						<button class='btn btn-primary'>Details</button>
-						<button class='btn btn-success pull-right'>Add to Cart</button>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="panel panel-primary">
-					<div class="panel-heading">Title</div>
-					<div class="panel-body">
-						<img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-					</div>
-					<div class="panel-footer">
-						<p>This is an example description just to see how this would work in the context of having a large description and the impact of it on the rest of the panel, I am going to start writing random things and compare, there will probably be a more button or something similar to that.</p>
-					</div>
-					<div class="panel-btn">
-						<button class='btn btn-primary'>Details</button>
-						<button class='btn btn-success pull-right'>Add to Cart</button>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="panel panel-primary">
-					<div class="panel-heading">Title</div>
-					<div class="panel-body">
-						<img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-					</div>
-					<div class="panel-footer">
-						<p>This is an example description just to see how this would work in the context of having a large description and the impact of it on the rest of the panel, I am going to start writing random things and compare, there will probably be a more button or something similar to that.</p>
-					</div>
-					<div class="panel-btn">
-						<button class='btn btn-primary'>Details</button>
-						<button class='btn btn-success pull-right'>Add to Cart</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<footer class="container-fluid text-center">
-		
-		<form class="form-inline" action="subscribe.php" method="POST">
-			<label for="email">Subscribe for Special Offers:</label>
-			<input id="email" type="email" class="form-control" size="50" placeholder="Email Address">
-			<button type="submit" class="btn btn-success">Sign Up</button>
-		</form>
-		<p>Copyright &copy; <?php echo Date("Y"); ?> Shaw Academy</p>
-	</footer>
+	<div id ="content"></div>
 	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script>
+	$("#home").on("click", function(event){
+		event.preventDefault(); 
+		$("#content").load($(this). attr("href"), completeFunction); 
+	});
+	function completeFunction (responseText,textStatus,request){
+		if (textStatus =="error"){
+			$("#content").text("An error occurred during your request : "+ request.status+" "+request.statusText);
+		}
+
+	}
+	</script>
 </body>
 </html>
