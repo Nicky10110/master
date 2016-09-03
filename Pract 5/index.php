@@ -21,12 +21,12 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				</button>
-				<a id ="home" class="navbar-brand" href="home.php">Shawpify Home</a>
+				<a id ="home" class="navbar-brand navigate" href="home.php">Shawpify Home</a>
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">
-					<li><a id ="products" href="products.php">Products</a></li>
-					<li><a id = "contact" href="contact.php">Contact Us</a></li>
+					<li><a id ="products" class="navigate" href="products.php">Products</a></li>
+					<li><a id = "contact" class="navigate"  href="contact.php">Contact Us</a></li>
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
@@ -43,14 +43,19 @@
 	$(window).on("load", function() {
 	$("#content").load($("#home").attr("href"), completeFunction);
 	}); 
-	$("#products").on("click", function(event){
+	$(".navigate" on("click", function(event)){
+		event.preventDefault(); 
+		$("#content").load($(this). attr("href"), completeFunction); 
+	});
+
+	/*$("#products").on("click", function(event){
 		event.preventDefault(); 
 		$("#content").load($(this). attr("href"), completeFunction); 
 	});
 	$("#home").on("click", function(event){
 		event.preventDefault(); 
 		$("#content").load($(this). attr("href"), completeFunction); 
-	});
+	});*/
 	function completeFunction (responseText,textStatus,request){
 		if (textStatus =="error"){
 			$("#content").text("An error occurred during your request : "+ request.status+" "+request.statusText);
