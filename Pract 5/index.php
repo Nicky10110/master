@@ -44,6 +44,12 @@
 		event.preventDefault(); 
 		$(this).load($(this). attr("href"), completeFunction); 
 	}
+	function completeFunction (){
+		if (textStatus =="error"){
+			$("#content").text("An error occurred during your request : "+ request.status+" "+request.statusText);
+		}
+
+	}
 	</script>
 </body>
 </html>
