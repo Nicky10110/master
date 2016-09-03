@@ -25,7 +25,7 @@
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">
-					<li><a id ="products" href="product.php">Products</a></li>
+					<li><a id ="products" href="products.php">Products</a></li>
 					<li><a id = "contact" href="contact.php">Contact Us</a></li>
 				</ul>
 
