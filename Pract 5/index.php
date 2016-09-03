@@ -25,8 +25,8 @@
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">
-					<li><a href="product.php">Products</a></li>
-					<li><a href="contact.php">Contact Us</a></li>
+					<li><a id ="products" href="product.php">Products</a></li>
+					<li><a id = "contact" href="contact.php">Contact Us</a></li>
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
@@ -43,6 +43,10 @@
 	$(window).on("load", function() {
 	$("#content").load($("#home").attr("href"), completeFunction);
 	}); 
+	$("#products").on("click", function(event){
+		event.preventDefault(); 
+		$("#content").load($(this). attr("href"), completeFunction); 
+	});
 	$("#home").on("click", function(event){
 		event.preventDefault(); 
 		$("#content").load($(this). attr("href"), completeFunction); 
