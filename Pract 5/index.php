@@ -42,7 +42,7 @@
 	<script>
 	$("#home").on("click", function(event){
 		event.preventDefault(); 
-		$("#content").load($(this). attr("href"), completeFunction); 
+		$("#content").load($(this).attr("href"), completeFunction);
 	});
 	function completeFunction (responseText,textStatus,request){
 		if (textStatus =="error"){
