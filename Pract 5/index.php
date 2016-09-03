@@ -21,15 +21,12 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">Shawpify Home</a>
+				<a class="navbar-brand" href="index.php">Shawpify Home</a>
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">
-					<li><a class="active" href="#">Home</a></li>
-					<li><a href="#">Products</a></li>
-					<li><a href="#">Deals</a></li>
-					<li><a href="#">Stores</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="product.php">Products</a></li>
+					<li><a href="contact.php">Contact Us</a></li>
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
